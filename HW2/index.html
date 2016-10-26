@@ -1,72 +1,50 @@
-<html>    
-<head>    
- <title>Sample Input Form</title>   
-<link rel="stylesheet" type="text/css" href="css/1.css" /> 
-</head>    
-<body>    
-<p>    
-<h1>Sample Transcript Report Form</h1>    
-<p>    
-<form method=POST action="form.php">    
-   
-<table border=0 cellspacing=2 cellpadding=2>    
-<tr><th>Course Name</th>    
-<th>Units(1-5)</th>    
-<th>Grade(0-100)</th>    
-</tr>    
-   
-<tr>    
-<td>    
-<input type="text" name="course1" size="30" value="">    
-</td>    
-<td>    
-<input type="text" name="units1" size="10" value="">    
-</td>    
-<td>    
-<input type="text" name="grade1" size="10" value="">    
-</td>    
-</tr>    
-<tr>    
-<td>    
-<input type="text" name="course2" size="30">    
-</td>    
-<td>    
-<input type="text" name="units2" size="10">    
-</td>    
-<td>    
-<input type="text" name="grade2" size="10">    
-</td>    
-</tr>    
-<tr>    
-<td>    
-<input type="text" name="course3" size="30">    
-</td>    
-<td>    
-<input type="text" name="units3" size="10">    
-</td>    
-<td>    
-<input type="text" name="grade3" size="10">    
-</td>    
-</tr>    
-<tr>    
-<td>    
-<input type="text" name="course4" size="30">    
-</td>    
-<td>    
-<input type="text" name="units4" size="10">    
-</td>    
-<td>    
-<input type="text" name="grade4" size="10">    
-</td>    
-</tr>    
-<tr>    
-<td height=25> </td>    
-</tr>    
-<tr><td colspan=3 align=center>    
-<input type=submit value="Submit">    
-</td>    
-</tr>    
-</table>    
-<hr>    
-</body>    
-</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title> </title> 
+<link rel="stylesheet" type="text/css" href="css/2.css" />
+<script type="text/javascript" src="fountion.js"> 
+
+</script>  
+</head> 
+<body> 
+<div id="calculator"> 
+
+<form name="calculator" action="" method="get"> 
+<div id="calcu-screen"> 
+
+<input type="text" name="numScreen" class="screen" value="0" onfocus="this.blur();" /> 
+</div> 
+<div id="calcu-btn"> 
+<ul> 
+<li onclick="command(7)">7</li> 
+<li onclick="command(8)">8</li> 
+<li onclick="command(9)">9</li> 
+<li class="tool" onclick="del()">←</li> 
+<li class="tool" onclick="clearscreen()">C</li> 
+<li onclick="command(4)">4</li> 
+<li onclick="command(5)">5</li> 
+<li onclick="command(6)">6</li> 
+<li class="tool" onclick="times()">×</li> 
+<li class="tool" onclick="divide()">÷</li> 
+<li onclick="command(1)">1</li> 
+<li onclick="command(2)">2</li> 
+<li onclick="command(3)">3</li> 
+<li class="tool" onclick="plus()">+</li> 
+<li class="tool" onclick="minus()">-</li> 
+<li onclick="command(0)">0</li> 
+<li onclick="dzero()">00</li> 
+<li onclick="dot()">.</li> 
+<li class="tool" onclick="persent()">%</li> 
+<li class="tool" onclick="equal()">=</li> 
+</ul> 
+</div> 
+<div id="calcu-foot"> 
+<span id="note"></span> 
+
+</div> 
+</form> 
+</div> 
+</body> 
+</html> 
